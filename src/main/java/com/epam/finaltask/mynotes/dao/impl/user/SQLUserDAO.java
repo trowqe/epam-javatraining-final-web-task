@@ -62,7 +62,6 @@ public class SQLUserDAO extends SqlDao implements UserDAO {
 		user.setLogin(rs.getString("login"));
 		user.setPassword(rs.getString("password"));
 		user.setAccessLevel(Integer.parseInt(rs.getString("access_Level")));
-
 		return user;
 
 	}
@@ -117,5 +116,6 @@ public class SQLUserDAO extends SqlDao implements UserDAO {
 
 		return true;
 	}
+
 
 }

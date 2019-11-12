@@ -36,7 +36,7 @@ public class SQLNotesDAOQueries {
 	
 	protected static final String QUERY_GET_QUANITY_OF_SHARED_NOTES = "SELECT count(*) FROM note WHERE iduser=? AND idnote IN (SELECT idnote FROM access WHERE iduser<>?)";
 	
-	protected static final String QUERY_GET_USERS_WHO_CAN_ACCES_NOTE = "SELECT user.iduser,user.login, access.access_level FROM user INNER JOIN access using(iduser) where idnote=? and iduser<>?";
+	protected static final String QUERY_GET_USERS_WHO_CAN_ACCES_NOTE = "SELECT user.iduser, user.login, access.access_level FROM user INNER JOIN access using(iduser) where idnote=? and iduser<>?";
 	
 	
 	

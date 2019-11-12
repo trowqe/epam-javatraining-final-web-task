@@ -48,7 +48,7 @@ public class GoToMainPage implements Command {
 		session.removeAttribute("error");
 		session.removeAttribute("success");
 
-		session.removeAttribute("notes");;
+		session.removeAttribute("notes");
 	}
 
 }

@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mynotes" />
+        <module name="epam-javatraining-final-web-task" />
       </profile>
     </annotationProcessing>
   </component>

@@ -1,6 +1,7 @@
 package com.epam.finaltask.mynotes.controller.command;
 
 import com.epam.finaltask.mynotes.controller.command.impl.ChangeLocale;
+import com.epam.finaltask.mynotes.controller.command.impl.goToPage.GoToAdminPage;
 import com.epam.finaltask.mynotes.controller.command.impl.account.AuthorizationCommand;
 import com.epam.finaltask.mynotes.controller.command.impl.account.Logout;
 import com.epam.finaltask.mynotes.controller.command.impl.account.Registration;
@@ -58,7 +59,7 @@ public class CommandProvider {
 		commands.put("go_to_updating_note", new GoToUpdateNote());
 		commands.put("go_to_shared_notes", new GoToSharedNotes());
 		commands.put("go_to_settings", new GoToSettings());
-	
+	    commands.put("go_to_admin_page", new GoToAdminPage());
 	}
 
 	public Command getCommand(String commandName) {

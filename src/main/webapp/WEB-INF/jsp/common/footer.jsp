@@ -5,6 +5,6 @@
 <head>
 </head>
 <body>
-<h5>created by Trafimov Maxim for EPAM's java lab submission</h5>
+<h5>created by Motvei for BNTU</h5>
 </body>
 </html>

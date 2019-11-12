@@ -38,14 +38,14 @@ public class AuthorizationCommand implements Command {
 		String page;
 
 		HttpSession session = request.getSession(true);
-		
+
 		if (session.getAttribute("iduser") == null) {
 			try {
 				user = service.authorization(login, password);
 
 				if (user == null) {
-					session.setAttribute("error", "incorrect login!"); 
-																		
+					session.setAttribute("error", "incorrect login!");
+
 					page = INDEX_PAGE;
 
 				} else {
@@ -53,7 +53,10 @@ public class AuthorizationCommand implements Command {
 					session.setAttribute("user", user);
 					session.setAttribute("iduser", user.getId());
 					if (user.getAccessLevel() == -1)
-						page = BANNED_PAGE;
+					{page = BANNED_PAGE;}
+					if (user.getAccessLevel()==1){
+						page=ADMIN_PAGE;
+					}
 					else {
 						// send redirect to
 						page = MAIN_PAGE;
@@ -74,7 +77,7 @@ public class AuthorizationCommand implements Command {
 		request.getSession(true).setAttribute("prev_request", url);
 
 		response.sendRedirect(page);
-	
+
 	}
 
 }
