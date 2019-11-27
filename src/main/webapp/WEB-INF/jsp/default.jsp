@@ -2,6 +2,7 @@
          pageEncoding="utf-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ taglib prefix="mine" uri="http://koraytugay.com/mytags" %>
 <%@ page isELIgnored="false" %>
 
 <!DOCTYPE html>
@@ -78,6 +79,7 @@
         <button type="submit" value="submit" class="btn btn-primary">Submit</button>
     </form>
 
+    <mine:myFirstTag />
 
     <h3>
         <c:out value="${requestScope.error}"/>
