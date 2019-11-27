@@ -1,7 +1,7 @@
-package com.epam.finaltask.mynotes.controller;
+package com.bntu.mynotes.controller;
 
-import com.epam.finaltask.mynotes.controller.command.Command;
-import com.epam.finaltask.mynotes.controller.command.CommandProvider;
+import com.bntu.mynotes.controller.command.Command;
+import com.bntu.mynotes.controller.command.CommandProvider;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

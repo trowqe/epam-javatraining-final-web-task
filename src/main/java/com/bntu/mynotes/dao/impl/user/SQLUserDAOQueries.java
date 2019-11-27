@@ -1,4 +1,4 @@
-package com.epam.finaltask.mynotes.dao.impl.user;
+package com.bntu.mynotes.dao.impl.user;
 
 public class SQLUserDAOQueries {
 	protected static final String QUERY_CHECK_CREDENTIONALS = "SELECT * FROM user WHERE login=? and password=?";

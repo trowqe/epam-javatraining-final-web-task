@@ -1,4 +1,4 @@
-package com.epam.finaltask.mynotes.controller.command.util;
+package com.bntu.mynotes.controller.command.util;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Enumeration;

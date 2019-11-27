@@ -1,16 +1,13 @@
-package com.epam.finaltask.mynotes.dao.impl;
+package com.bntu.mynotes.dao.impl;
 
-import com.epam.finaltask.mynotes.dao.exception.NotDBDriverException;
+import com.bntu.mynotes.dao.exception.NotDBDriverException;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-//import org.apache.logging.log4j.LogManager;
-//import org.apache.logging.log4j.Logger;
 
 public class SqlDao {
 
-//	private static final Logger logger = LogManager.getLogger(ServiceException.class); 
 	
 	protected static final String driver;
 	protected static final String url;
@@ -19,8 +16,8 @@ public class SqlDao {
 
 	private static final String DB_DRIVER = "db.driver";
 	private static final String DB_URL = "db.url";
-	private static final String DB_LOGIN = "db.login"; //root?
-	private static final String DB_PASSWORD = "db.password"; //is it safe?
+	private static final String DB_LOGIN = "db.login";
+	private static final String DB_PASSWORD = "db.password";
 
 
 	private static final String DB_PROPERTIES_FILE_PATH = "db";

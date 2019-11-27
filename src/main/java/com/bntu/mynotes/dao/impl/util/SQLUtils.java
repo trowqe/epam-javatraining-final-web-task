@@ -1,6 +1,6 @@
-package com.epam.finaltask.mynotes.dao.impl.util;
+package com.bntu.mynotes.dao.impl.util;
 
-import com.epam.finaltask.mynotes.dao.impl.connection.ConnectionPool;
+import com.bntu.mynotes.dao.impl.connection.ConnectionPool;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

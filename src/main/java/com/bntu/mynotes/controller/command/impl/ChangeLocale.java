@@ -1,6 +1,6 @@
-package com.epam.finaltask.mynotes.controller.command.impl;
+package com.bntu.mynotes.controller.command.impl;
 
-import com.epam.finaltask.mynotes.controller.command.Command;
+import com.bntu.mynotes.controller.command.Command;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

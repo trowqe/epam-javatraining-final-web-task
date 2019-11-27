@@ -1,12 +1,11 @@
-package com.epam.finaltask.mynotes.controller.command;
+package com.bntu.mynotes.controller.command;
 
-import com.epam.finaltask.mynotes.controller.command.impl.ChangeLocale;
-import com.epam.finaltask.mynotes.controller.command.impl.GoToAdminPage;
-import com.epam.finaltask.mynotes.controller.command.impl.account.AuthorizationCommand;
-import com.epam.finaltask.mynotes.controller.command.impl.account.Logout;
-import com.epam.finaltask.mynotes.controller.command.impl.account.Registration;
-import com.epam.finaltask.mynotes.controller.command.impl.goToPage.*;
-
+import com.bntu.mynotes.controller.command.impl.account.AuthorizationCommand;
+import com.bntu.mynotes.controller.command.impl.account.Logout;
+import com.bntu.mynotes.controller.command.impl.account.Registration;
+import com.bntu.mynotes.controller.command.impl.goToPage.*;
+import com.bntu.mynotes.controller.command.impl.ChangeLocale;
+import com.bntu.mynotes.controller.command.impl.GoToAdminPage;
 
 import javax.servlet.annotation.MultipartConfig;
 import java.util.HashMap;

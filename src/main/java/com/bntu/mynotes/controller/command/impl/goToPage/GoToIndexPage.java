@@ -1,8 +1,8 @@
-package com.epam.finaltask.mynotes.controller.command.impl.goToPage;
+package com.bntu.mynotes.controller.command.impl.goToPage;
 
-import com.epam.finaltask.mynotes.controller.command.Command;
-import com.epam.finaltask.mynotes.controller.command.util.CreatorFullURL;
-import com.epam.finaltask.mynotes.service.ServiceProvider;
+import com.bntu.mynotes.controller.command.Command;
+import com.bntu.mynotes.controller.command.util.CreatorFullURL;
+import com.bntu.mynotes.service.ServiceProvider;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

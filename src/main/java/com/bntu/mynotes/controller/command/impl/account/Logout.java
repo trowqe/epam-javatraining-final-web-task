@@ -1,8 +1,8 @@
-package com.epam.finaltask.mynotes.controller.command.impl.account;
+package com.bntu.mynotes.controller.command.impl.account;
 
-import com.epam.finaltask.mynotes.controller.command.Command;
-import com.epam.finaltask.mynotes.service.ClientService;
-import com.epam.finaltask.mynotes.service.ServiceProvider;
+import com.bntu.mynotes.controller.command.Command;
+import com.bntu.mynotes.service.ClientService;
+import com.bntu.mynotes.service.ServiceProvider;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

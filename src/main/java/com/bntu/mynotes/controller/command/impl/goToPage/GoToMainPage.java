@@ -1,10 +1,8 @@
-package com.epam.finaltask.mynotes.controller.command.impl.goToPage;
+package com.bntu.mynotes.controller.command.impl.goToPage;
 
-import com.epam.finaltask.mynotes.controller.command.Command;
-import com.epam.finaltask.mynotes.controller.command.util.CreatorFullURL;
-import com.epam.finaltask.mynotes.entity.Note;
-import com.epam.finaltask.mynotes.service.ServiceProvider;
-import com.epam.finaltask.mynotes.service.exception.ServiceException;
+import com.bntu.mynotes.controller.command.Command;
+import com.bntu.mynotes.controller.command.util.CreatorFullURL;
+import com.bntu.mynotes.service.ServiceProvider;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -14,9 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.ArrayList;
 
-import static com.epam.finaltask.mynotes.controller.command.PageList.MAIN_PAGE_URL;
+import static com.bntu.mynotes.controller.command.PageList.MAIN_PAGE_URL;
 
 public class GoToMainPage implements Command {
 	

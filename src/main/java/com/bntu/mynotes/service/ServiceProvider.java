@@ -1,6 +1,6 @@
-package com.epam.finaltask.mynotes.service;
+package com.bntu.mynotes.service;
 
-import com.epam.finaltask.mynotes.service.impl.ClientServiceImpl;
+import com.bntu.mynotes.service.impl.ClientServiceImpl;
 
 public class ServiceProvider {
 	

@@ -1,4 +1,4 @@
-package com.epam.finaltask.mynotes.dao.exception;
+package com.bntu.mynotes.dao.exception;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

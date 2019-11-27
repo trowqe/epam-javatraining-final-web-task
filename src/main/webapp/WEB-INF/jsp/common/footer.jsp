@@ -5,6 +5,6 @@
 <head>
 </head>
 <body>
-<h5>created by Motvei for BNTU</h5>
+<h5>created by Matsvei for BNTU</h5>
 </body>
 </html>

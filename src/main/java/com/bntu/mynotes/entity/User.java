@@ -1,4 +1,4 @@
-package com.epam.finaltask.mynotes.entity;
+package com.bntu.mynotes.entity;
 
 import java.io.Serializable;
 

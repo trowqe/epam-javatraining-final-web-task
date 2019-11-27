@@ -1,4 +1,4 @@
-package com.epam.finaltask.mynotes.service.validation;
+package com.bntu.mynotes.service.validation;
 
 public class CredentionalValidator {
 

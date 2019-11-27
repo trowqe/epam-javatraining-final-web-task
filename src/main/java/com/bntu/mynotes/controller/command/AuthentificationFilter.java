@@ -1,4 +1,4 @@
-package com.epam.finaltask.mynotes.controller.command;
+package com.bntu.mynotes.controller.command;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -11,9 +11,6 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-
-import static com.epam.finaltask.mynotes.controller.command.PageList.*;
-import static com.epam.finaltask.mynotes.controller.command.PageList.INDEX_PAGE;
 
 public class AuthentificationFilter implements Filter {
 	private static final Logger logger = LogManager.getLogger(AuthentificationFilter.class);
@@ -42,7 +39,7 @@ public class AuthentificationFilter implements Filter {
 				session = req.getSession(true);
 				System.out.println("fasdasd");
 				session.setAttribute("error", "you should log in first!");
-				res.sendRedirect(INDEX_PAGE);
+				res.sendRedirect(PageList.INDEX_PAGE);
 			}
 		}
 		filterChain.doFilter(req, res);

@@ -1,13 +1,13 @@
-package com.epam.finaltask.mynotes.service.impl;
+package com.bntu.mynotes.service.impl;
 //
 
-import com.epam.finaltask.mynotes.dao.UserDAO;
-import com.epam.finaltask.mynotes.dao.exception.DaoException;
-import com.epam.finaltask.mynotes.dao.impl.DAOProvider;
-import com.epam.finaltask.mynotes.entity.User;
-import com.epam.finaltask.mynotes.service.ClientService;
-import com.epam.finaltask.mynotes.service.exception.ServiceException;
-import com.epam.finaltask.mynotes.service.validation.CredentionalValidator;
+import com.bntu.mynotes.dao.UserDAO;
+import com.bntu.mynotes.dao.exception.DaoException;
+import com.bntu.mynotes.dao.impl.DAOProvider;
+import com.bntu.mynotes.entity.User;
+import com.bntu.mynotes.service.ClientService;
+import com.bntu.mynotes.service.exception.ServiceException;
+import com.bntu.mynotes.service.validation.CredentionalValidator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.mindrot.jbcrypt.BCrypt;
@@ -47,7 +47,6 @@ public class ClientServiceImpl implements ClientService{
 		
 		DAOProvider daoProvider = DAOProvider.getInstance();
 		UserDAO userDAO = daoProvider.getUserDAO();
-		//String bcryptHashString = BCrypt.withDefaults().hashToString(12, password.toCharArray());
 		String bcryptHashString = BCrypt.hashpw(password, BCrypt.gensalt(12));
 		
 		try{
@@ -56,6 +55,5 @@ public class ClientServiceImpl implements ClientService{
 			logger.warn(ex);
 			throw new ServiceException("registration error!" + ex);
 		}
-		//should i clear variables?
 	}
 }

@@ -1,5 +1,5 @@
 <%@ page language="java"
-	import="com.epam.finaltask.mynotes.entity.*"
+	import="com.bntu.mynotes.entity.*"
 	contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>

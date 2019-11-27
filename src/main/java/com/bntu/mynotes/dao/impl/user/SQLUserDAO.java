@@ -1,11 +1,11 @@
-package com.epam.finaltask.mynotes.dao.impl.user;
+package com.bntu.mynotes.dao.impl.user;
 
-import com.epam.finaltask.mynotes.dao.UserDAO;
-import com.epam.finaltask.mynotes.dao.exception.DaoException;
-import com.epam.finaltask.mynotes.dao.impl.SqlDao;
-import com.epam.finaltask.mynotes.dao.impl.connection.ConnectionPool;
-import com.epam.finaltask.mynotes.dao.impl.util.SQLUtils;
-import com.epam.finaltask.mynotes.entity.User;
+import com.bntu.mynotes.dao.UserDAO;
+import com.bntu.mynotes.dao.exception.DaoException;
+import com.bntu.mynotes.dao.impl.SqlDao;
+import com.bntu.mynotes.dao.impl.util.SQLUtils;
+import com.bntu.mynotes.dao.impl.connection.ConnectionPool;
+import com.bntu.mynotes.entity.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.mindrot.jbcrypt.BCrypt;
@@ -14,8 +14,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-import static com.epam.finaltask.mynotes.dao.impl.user.SQLUserDAOQueries.*;
 
 public class SQLUserDAO extends SqlDao implements UserDAO {
 
@@ -33,7 +31,7 @@ public class SQLUserDAO extends SqlDao implements UserDAO {
 
 		try {
 			con = pool.getConnection();
-			st = con.prepareStatement(QUERY_CHECK_PASSWORD);
+			st = con.prepareStatement(SQLUserDAOQueries.QUERY_CHECK_PASSWORD);
 
 			st.setString(1, userLogin);
 
@@ -81,8 +79,8 @@ public class SQLUserDAO extends SqlDao implements UserDAO {
 			con = pool.getConnection();
 			con.setAutoCommit(false);
 
-			stCheck = con.prepareStatement(QUERY_USER_EXISTS_CHECK);
-			stRegister = con.prepareStatement(QUERY_REGISTER_CREDENTIONALS);
+			stCheck = con.prepareStatement(SQLUserDAOQueries.QUERY_USER_EXISTS_CHECK);
+			stRegister = con.prepareStatement(SQLUserDAOQueries.QUERY_REGISTER_CREDENTIONALS);
 
 			stCheck.setString(1, userLogin);
 

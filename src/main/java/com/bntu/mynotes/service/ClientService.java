@@ -1,7 +1,7 @@
-package com.epam.finaltask.mynotes.service;
+package com.bntu.mynotes.service;
 
-import com.epam.finaltask.mynotes.entity.User;
-import com.epam.finaltask.mynotes.service.exception.ServiceException;
+import com.bntu.mynotes.entity.User;
+import com.bntu.mynotes.service.exception.ServiceException;
 
 public interface ClientService {
 

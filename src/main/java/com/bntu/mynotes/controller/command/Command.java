@@ -1,4 +1,4 @@
-package com.epam.finaltask.mynotes.controller.command;
+package com.bntu.mynotes.controller.command;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

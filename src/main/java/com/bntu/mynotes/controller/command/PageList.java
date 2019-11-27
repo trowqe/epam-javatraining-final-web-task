@@ -1,4 +1,4 @@
-package com.epam.finaltask.mynotes.controller.command;
+package com.bntu.mynotes.controller.command;
 
 public class PageList {
 

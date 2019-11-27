@@ -1,7 +1,7 @@
-package com.epam.finaltask.mynotes.dao;
+package com.bntu.mynotes.dao;
 
-import com.epam.finaltask.mynotes.dao.exception.DaoException;
-import com.epam.finaltask.mynotes.entity.User;
+import com.bntu.mynotes.dao.exception.DaoException;
+import com.bntu.mynotes.entity.User;
 
 public interface UserDAO {
 

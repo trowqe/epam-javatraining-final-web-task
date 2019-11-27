@@ -1,7 +1,7 @@
-package com.epam.finaltask.mynotes.dao.impl;
+package com.bntu.mynotes.dao.impl;
 
-import com.epam.finaltask.mynotes.dao.UserDAO;
-import com.epam.finaltask.mynotes.dao.impl.user.SQLUserDAO;
+import com.bntu.mynotes.dao.UserDAO;
+import com.bntu.mynotes.dao.impl.user.SQLUserDAO;
 
 public class DAOProvider {
 	private static final DAOProvider instance = new DAOProvider();

@@ -1,4 +1,4 @@
-package com.epam.finaltask.mynotes.service.exception;
+package com.bntu.mynotes.service.exception;
 
 public class ServiceException extends Exception {
 	private static final long serialVersionUID = -5518922679314644113L;

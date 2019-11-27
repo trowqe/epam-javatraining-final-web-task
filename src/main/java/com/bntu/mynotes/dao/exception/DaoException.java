@@ -1,6 +1,6 @@
-package com.epam.finaltask.mynotes.dao.exception;
+package com.bntu.mynotes.dao.exception;
 
-import com.epam.finaltask.mynotes.service.exception.ServiceException;
+import com.bntu.mynotes.service.exception.ServiceException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

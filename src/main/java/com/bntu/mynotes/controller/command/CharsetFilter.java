@@ -1,4 +1,4 @@
-package com.epam.finaltask.mynotes.controller.command;
+package com.bntu.mynotes.controller.command;
 
 import javax.servlet.*;
 import java.io.IOException;
@@ -17,7 +17,6 @@ public class CharsetFilter implements Filter {
 	        response.setContentType("text/html; charset=UTF-8");
 	        response.setCharacterEncoding("UTF-8");
 	        next.doFilter(request, response);
-		
 	}
 
 	@Override
